@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const userModel = require("../models/auth.model");
 
 const postSchema = new mongoose.Schema({
     image : String,

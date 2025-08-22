@@ -18,10 +18,6 @@ async function authMiddleware(req, res, next) {
    })
    req.user = user
    next()
-
-    res.status(200).json({
-            message: "Post found successfully"
-        })
     
    } catch (error) {
         res.status(401).json({
